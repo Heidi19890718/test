@@ -9,10 +9,21 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-154870832-1');
+</script>
+<script>
+function send(){
+  gtag("event", "Watch Video", {
+	  "event_category": "Product Video on Home Page",
+	  "event_label": "Product Video",
+    "value": 5
+  });
+  alert("accident has been sent");
+}
 </script>  
 </head>
 <body>
   <h3>Website for GA</h3>
   <div>Hello Google Analytics </div>
+  <button onclick="send();">Click Here</button>  
 </body>
 </html>
